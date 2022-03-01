@@ -1,5 +1,69 @@
+:root {
+  --main-bg-color: rgb(40, 43, 50);
+  --accent-color: #ff6300;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: var(--main-bg-color);
+}
+
+.header {
+  text-align: center;
+  margin: 1.5em;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 800;
+  text-shadow: 0 0 .25em var(--accent-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-cardResult {
+  min-height: 10em;
+  border: .3em var(--accent-color) solid;
+  padding: 5em 10em;
+  margin: 2em 4em;
+}
+
+.btn-default {
+  padding: 1em 3em;
+
+  border: 1px var(--accent-color) solid;
+  border-radius: .25em;
+
+  text-transform: uppercase;
+  text-shadow: 1px 0 10px var(--accent-color);
+
+  font-size: 1em;
+  font-weight: 600;
+
+  background-color: var(--main-bg-color);
+  color: var(--accent-color);
+}
+
+.btn-default:hover,
+.btn-default:focus{
+  background-color: white;
+  border: 1px var(--main-bg-color) solid;
+}
+
+.btn-default:active{
+  background-color: var(--main-bg-color);
+  color: var(--accent-color);
+  border: 1px var(--accent-color) solid;
 }
